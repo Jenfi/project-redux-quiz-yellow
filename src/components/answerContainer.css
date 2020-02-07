@@ -1,3 +1,8 @@
-.answer-button {
-  font-size: 24px;
+.answer-option-container{
+  display: flex;
+  flex-grow: gro;
+  flex-grow: grow;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,26 @@
+article{
+  background-color: #FFF;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+article p{
+  font-size: 42px;
+  margin: 6px;
+}
+
+.question {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px 7px 20px 7px;
+  margin-top: 40px; */
+  padding: 10px 12px 20px 12px;
+  margin-bottom: 20px;
+}

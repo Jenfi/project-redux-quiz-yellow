@@ -1,8 +1,26 @@
 .next-button {
   font-size: 24px;
+  background-color: #f5f552;
+  border: 0;
+  height: 80px;
+  margin: 5px;
+  padding: 6px;
+  width: 180px;
 }
 
 .restart-button {
   font-size: 24px;
   background-color: cornflowerblue;
 }
+
+.answer-button {
+  font-size: 20px;
+  background-color: #21D4FD;
+  border: 0;
+  height: 80px;
+  margin: 5px;
+  padding: 6px;
+  width: 180px;
+}
+
+

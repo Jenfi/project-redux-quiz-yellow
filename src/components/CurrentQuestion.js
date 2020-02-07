@@ -11,8 +11,8 @@ export const CurrentQuestion = () => {
   }
 
   return (
-    <div>
-      <h1>Question: {question.questionText}</h1>
+    <div className="question">
+      <h1><span>Question: </span>{question.questionText}</h1>
     </div>
   );
 };

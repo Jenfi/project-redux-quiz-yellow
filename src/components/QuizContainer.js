@@ -7,16 +7,22 @@ import { ProgressCount } from "components/ProgressCount";
 import { CurrentQuestion } from "components/CurrentQuestion";
 import { Feedback } from "components/Feedback";
 
+import "./currentQuestion.css"
+
 export const QuizContainer = () => {
   const quizEnd = useSelector(state => state.quiz.quizOver);
   return (
     <>
-      <ProgressCount />
+      <div className="progress-container">
+        <ProgressCount />
+      </div>
       {!quizEnd && (
         <>
-          <CurrentQuestion />
-          <AnswerContainer />
-          <Feedback />
+          <article>
+            <CurrentQuestion />
+            <AnswerContainer />
+            <Feedback />
+          </article>
         </>
       )}
       {quizEnd && <Summary />}

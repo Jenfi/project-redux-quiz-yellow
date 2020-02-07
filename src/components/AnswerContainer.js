@@ -2,6 +2,7 @@ import React from "react";
 import { quiz } from "../reducers/quiz";
 import { useSelector, useDispatch } from "react-redux";
 import "./answerContainer.css";
+import "./currentQuestion.css";
 
 export const AnswerContainer = () => {
   const options = useSelector(
@@ -14,17 +15,21 @@ export const AnswerContainer = () => {
 
   const dispatch = useDispatch();
 
-  return options.map((option, index) => (
-    <button
-      className="answer-button"
-      onClick={() =>
-        dispatch(
-          quiz.actions.submitAnswer({ questionId: id, answerIndex: index })
-        )
-      }
-      key={option}
-    >
-      {option}
-    </button>
-  ));
+  return (
+    <section className="answer-option-container">
+      {options.map((option, index) => (
+
+        <button
+          type="button"
+          className="answer-button"
+          onClick={() =>
+            dispatch(
+              quiz.actions.submitAnswer({ questionId: id, answerIndex: index })
+            )
+          }
+          key={option}>
+          {option}
+        </button>))}
+    </section>
+  );
 };

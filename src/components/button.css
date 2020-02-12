@@ -13,7 +13,7 @@
   background-color: cornflowerblue;
 }
 
-.answer-button {
+/* .answer-button {
   font-size: 20px;
   background-color: #21D4FD;
   border: 0;
@@ -21,6 +21,37 @@
   margin: 5px;
   padding: 6px;
   width: 180px;
+} */
+
+.answer-button {
+  font-size: 20px;
+  background-color: #21D4FD;
+  border: 0;
+  height: 80px;
+  margin: 2px;
+  padding: 6px 6px 6px 15px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.answer-button:hover .icon svg{
+  margin-right: 9px;
+}
+
+.icon{
+  margin-left: auto;
+}
+
+.icon svg{
+  margin: 0 17px 0 10px;
+  /* height: 30px; */
+  width: auto;
+  fill: #FFF;;
+  transition: all 0.2s ;
+  /* margin-right: 20px; */
+  height: 25px;
 }
 
 

@@ -8,8 +8,10 @@ export const ProgressCount = () => {
   );
   const numberOfQuestions = useSelector(state => state.quiz.questions.length);
   return (
-    <p className="progress">
-      {currentQuestionNumber}/{numberOfQuestions}
-    </p>
+    <>
+      <p className="progress">
+        {currentQuestionNumber}/{numberOfQuestions}
+      </p>
+    </>
   );
 };

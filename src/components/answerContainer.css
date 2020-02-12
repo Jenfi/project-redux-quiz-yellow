@@ -1,6 +1,6 @@
 .answer-option-container{
   display: flex;
-  flex-grow: gro;
+  /* flex-grow: gro; */
   flex-grow: grow;
   flex-flow: wrap;
   justify-content: center;

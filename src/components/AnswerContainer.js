@@ -1,6 +1,7 @@
 import React from "react";
 import { quiz } from "../reducers/quiz";
 import { useSelector, useDispatch } from "react-redux";
+import { ReactComponent as Next } from './next.svg'
 import "./answerContainer.css";
 import "./currentQuestion.css";
 
@@ -28,7 +29,7 @@ export const AnswerContainer = () => {
             )
           }
           key={option}>
-          {option}
+          {option}<div className="icon"><Next /></div>
         </button>))}
     </section>
   );

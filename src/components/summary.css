@@ -1,0 +1,16 @@
+.summary {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 20px;
+}
+
+.summary h1{
+  font-weight: 700;
+}
+
+.summary h3{
+  text-align: center;
+  font-weight: 200;
+}

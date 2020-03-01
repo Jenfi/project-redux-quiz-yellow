@@ -1,9 +1,9 @@
-import React from "react";
-import { quiz } from "../reducers/quiz";
-import { useSelector, useDispatch } from "react-redux";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { quiz } from '../reducers/quiz';
 import { ReactComponent as Next } from './next.svg'
-import "./answerContainer.css";
-import "./currentQuestion.css";
+import './answerContainer.css';
+import './currentQuestion.css';
 
 export const AnswerContainer = () => {
   const options = useSelector(
@@ -14,6 +14,10 @@ export const AnswerContainer = () => {
     state => state.quiz.questions[state.quiz.currentQuestionIndex].id
   );
 
+  // const colors = useSelector(
+  //   state => state.quiz.questions[state.quiz.currentQuestionIndex].colors
+  // )
+
   const dispatch = useDispatch();
 
   return (
@@ -23,6 +27,8 @@ export const AnswerContainer = () => {
         <button
           type="button"
           className="answer-button"
+          // style={{ background: 'green' }}
+          // background={colors}
           onClick={() =>
             dispatch(
               quiz.actions.submitAnswer({ questionId: id, answerIndex: index })

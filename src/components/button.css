@@ -2,7 +2,7 @@
   font-size: 24px;
   background-color: #f5f552;
   border: 0;
-  height: 80px;
+  height: 60px;
   margin: 5px;
   padding: 6px;
   width: 180px;
@@ -11,6 +11,16 @@
 .restart-button {
   font-size: 24px;
   background-color: cornflowerblue;
+}
+
+.restart-button{
+  font-size: 24px;
+  background-color: #f5f552;
+  border: 0;
+  height: 60px;
+  margin: 5px;
+  padding: 6px;
+  width: 180px;
 }
 
 /* .answer-button {
@@ -27,13 +37,14 @@
   font-size: 20px;
   background-color: #21D4FD;
   border: 0;
-  height: 80px;
+  height: 70px;
   margin: 2px;
   padding: 6px 6px 6px 15px;
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  text-align: inherit;
 }
 
 .answer-button:hover .icon svg{

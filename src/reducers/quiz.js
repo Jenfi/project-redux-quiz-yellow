@@ -1,24 +1,25 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 // Change these to your own questions!
+//options: färger
 const questions = [
   {
     id: 1,
-    questionText: "Who was the first person to find the first bug?",
+    questionText: 'Who was the first person to find the first bug?',
     options: [
-      "Grace Murray Hopper",
-      "Marie Curie",
-      "Agnes Ketesdi",
-      "Ann Langley"
+      'Grace Murray Hopper',
+      'Marie Curie',
+      'Agnes Ketesdi',
+      'Ann Langley'
     ],
     correctAnswerIndex: 0
   },
   {
     id: 2,
     questionText:
-      "Which woman was the lead software engineer on Project Apollo?",
+      'Who was the lead software engineer on Project Apollo?',
     options: [
-      "Margaret Hamilton",
+      'Margaret Hamilton',
       "Isabel Drost - Fromm",
       "Carol Shaw",
       "Jerry Ellsworth"

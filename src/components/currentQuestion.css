@@ -9,7 +9,7 @@ article{
 }
 
 article p{
-  font-size: 42px;
+  font-size: 30px;
   margin: 6px;
 }
 
@@ -20,6 +20,7 @@ article p{
   justify-content: center;
   padding: 10px 12px 10px 12px;
   margin-bottom: 20px;
+  min-height: 110px;
 }
   /* height: 150px;
   display: flex;

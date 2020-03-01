@@ -3,8 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { quiz } from "../reducers/quiz";
 import "./button.css";
 
-//next question, summary, restart
-
 export const Button = () => {
   const dispatch = useDispatch();
 
@@ -28,25 +26,28 @@ export const Button = () => {
           Next question
         </button>
       )}
-      {!quizEnd && currentQuestionNumber === numberOfQuestions && (
+      {!quizEnd && hasAnswer && currentQuestionNumber === numberOfQuestions && (
         <button
           className="next-button"
           type="button"
-          onClick={() => dispatch(quiz.actions.goToNextQuestion())}
-        >
+          // style={{ margin: '15px' }}
+          onClick={() => dispatch(quiz.actions.goToNextQuestion())}>
           Submit
         </button>
-      )}
+      )
+      }
 
-      {quizEnd && (
-        <button
-          className="restart-button"
-          type="button"
-          onClick={() => dispatch(quiz.actions.restart())}
-        >
-          Restart
+      {
+        quizEnd && (
+          <button
+            className="restart-button"
+            type="button"
+            onClick={() => dispatch(quiz.actions.restart())}
+          >
+            Restart
         </button>
-      )}
+        )
+      }
     </>
   );
 };
